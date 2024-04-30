@@ -1,5 +1,46 @@
+@import "./scss/cores";
+@import "./scss/componentes";
+@import "./scss/layout.scss";
+@import "./scss/resets";
 
+.card {
+  @include card;
 
-body {
-    background-color: bisque;
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  justify-content: center;
+  align-items: center;
+
+  button {
+    @include botaoPrincipal;
+  }
+
+  input {
+    @include inputTexto;
+  }
+
+  .panelResultado {
+    @include panelResultado;
+
+    .erro {
+      background-color: $vermelho;
+    }
+  }
 }
+
+main {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 50px;
+}
+
+
+
+

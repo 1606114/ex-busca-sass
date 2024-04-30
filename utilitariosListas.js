@@ -1,3 +1,0 @@
-
-
-// Criar funções e exportar

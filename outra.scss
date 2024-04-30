@@ -1,0 +1,14 @@
+
+
+@import "./scss/cores";
+@import "./scss/componentes";
+
+body {
+    background-color: $cinza-claro;
+}
+
+.noticia {
+    @include card;
+
+    background-color: $marrom;
+}

@@ -1,0 +1,48 @@
+@import "cores";
+
+@mixin card {
+  background-color: $cinza-claro;
+  padding: 0px 10px;
+
+  min-width: 170px;
+  min-height: 200px;
+
+  max-width: 170px;
+  max-height: 300px;
+}
+
+@mixin botaoPrincipal {
+  width: 100%;
+  background-color: $cinza-escuro;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+}
+
+@mixin inputTexto {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 3px;
+  border: solid 1px $cinza-medio;
+}
+
+@mixin panelResultado {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: $marrom;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+  text-align: center;
+}
+
+.sucesso {
+  background-color: $verde !important;
+}
+
+.erro {
+  background-color: $vermelho !important;
+}
